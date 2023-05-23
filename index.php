@@ -1,7 +1,7 @@
 <?php
 include __DIR__ . '/Database/db.php';
 
-var_dump($products)
+// var_dump($products)
 
 ?>
 
