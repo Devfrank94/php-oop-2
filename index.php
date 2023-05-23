@@ -1,3 +1,9 @@
+<?php
+include __DIR__ . '/Database/db.php';
+
+var_dump($products)
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,9 +22,9 @@
 </head>
 
 <body>
-    <header>
 
-    </header>
+
+
 </body>
 
 </html>

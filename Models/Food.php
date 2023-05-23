@@ -1,4 +1,6 @@
 <?php
+// include __DIR__ . '/Product.php';
+
 class Food extends Product{
     public $family;
     

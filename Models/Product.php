@@ -1,5 +1,10 @@
 <?php
 
+include __DIR__ . '/Kennel.php';
+include __DIR__ . '/Food.php';
+include __DIR__ . '/Genre.php';
+include __DIR__ . '/Toy.php';
+
 class Product{
     public $name;
     public $price;
@@ -16,7 +21,7 @@ class Product{
     {
         $this->name = $_name;
         $this->price = $_price;
-        $this->genres = $_genre;
+        $this->genre = $_genre;
         $this->image = $_image;
     }
 }
