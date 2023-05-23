@@ -3,10 +3,11 @@
 // include __DIR__ . '/Product.php';
 
 class Toy extends Product{
-    public $family = 'Toy';
+    public $family;
     
-    public function __construct($_name, $_price, $_genre, $_image)
+    public function __construct($_name, $_price, $_family, $_genre, $_image)
     {
-      Product::__construct($_name, $_price, $_genre, $_image);
+      Product::__construct($_name, $_price, $_family, $_genre, $_image);
+      $this->family = $_family;
     }
 }

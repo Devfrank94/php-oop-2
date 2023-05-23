@@ -22,6 +22,44 @@ include __DIR__ . '/Database/db.php';
 </head>
 
 <body>
+<main class="pt-3">
+
+<div class="container my-4">
+    <h1 class="my-4">Boolshop</h1>
+    <h3 class="my-2">I miei prodotti</h3>
+    <div class="row">
+        <?php foreach ($products as $product) : ?>
+            <div class="col-3 p-2">
+                <div class="card h-100">
+                    <div class="position-relative h-100">
+                    <img src=<?php echo "'$product->image'" ?> alt="" class="h-100 card-img-top">
+                    <p class="position-absolute bottom-0 end-0 m-4 rounded-circle d-flex justify-content-center align-items-center">
+                        <?php if($product->genre == 'Cat'): ?>
+                        <i class="fa-solid fa-cat fs-5 p-2 rounded-circle bg-info"></i>
+                        <?php elseif($product->genre == 'Dog'): ?>
+                        <i class="fa-solid fa-dog fs-5 p-2 rounded-circle bg-warning"></i>
+                        <?php else:?>
+                            <i class="fa-solid fa-dog fs-5 p-2 rounded-circle bg-warning me-2"></i>
+                            <i class="fa-solid fa-cat fs-5 p-2 rounded-circle bg-info"></i>
+                        <?php endif; ?>
+                    </p>
+                    </div>
+                  
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold"><?php echo $product->name ?></h6>
+                        <p class="card-text">
+                            Prezzo: <?php echo $product->price; ?>€
+                        </p>
+                        <p class="card-text">
+                          Categoria Prodotto: <?php echo $product->family; ?>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>
+</main>
 
 
 
