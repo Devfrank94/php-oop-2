@@ -3,7 +3,7 @@
 include __DIR__ . '/../Models/Product.php';
 
 $products = [
-  new Product('Collare Trixie Premium', '10', 'Product', 'Dog', 'https://shop-cdn-m.mediazs.com/bilder/collare/trixie/premium/semistrangolo/nero/2/400/200318_pla_trixie_premium_zugstopp_halsband_schwarz_hs_01_2.jpg', ),
+  new Product('Collare Trixie Premium', '10', 'accessory', 'Dog', 'https://shop-cdn-m.mediazs.com/bilder/collare/trixie/premium/semistrangolo/nero/2/400/200318_pla_trixie_premium_zugstopp_halsband_schwarz_hs_01_2.jpg', ),
 
   new Kennel('Cuccia per cani Spike Comfort', '56', 'Cucce', 'Dog', 'https://shop-cdn-m.mediazs.com/bilder/cuccia/per/cani/spike/comfort/9/400/icon_topseller_1_57__9.jpg'),
 
@@ -13,7 +13,7 @@ $products = [
 
   new Kennel('Tiragraffi Trixie BE NORDIC', '30', 'Cucce', 'Cat', 'https://shop-cdn-m.mediazs.com/bilder/tiragraffi/trixie/be/nordic/cat/tower/juna/3/400/114830_pla_trixie_benordic_cattower_juna_grau_hs_01_3.jpg'),
     
-  new Product('Collare Heim Buffalo Cognac', '8', 'Product', 'Cat', 'https://shop-cdn-m.mediazs.com/bilder/collare/heim/buffalo/cognac/6/400/1__dsc9090_6.jpg'),
+  new Product('Collare Heim Buffalo Cognac', '8', 'accessory', 'Cat', 'https://shop-cdn-m.mediazs.com/bilder/collare/heim/buffalo/cognac/6/400/1__dsc9090_6.jpg'),
 
   new Toy('Gioco di intelligenza Nomad', '15', 'Toy', 'Dog', 'https://shop-cdn-m.mediazs.com/bilder/gioco/di/intelligenza/nomad/tales/bloom/snack/roller/6/400/333015_pla_rolling_snack_roll_fg_1051_6.jpg'),
 
